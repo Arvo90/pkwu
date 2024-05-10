@@ -1,0 +1,471 @@
+@import url('https://fonts.cdnfonts.com/css/eight-bit-dragon');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('../font/Gotham-font-family/Gotham-Book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Medium';
+    src: url('../font/circular/CircularStd-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Bold';
+    src: url('../font/circular/CircularStd-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Black';
+    src: url('../font/circular/CircularStd-Black.otf') format('opentype');
+    font-weight: 900;
+    /* "900" represents the font weight for the Black variant */
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+body {
+    background-color: #ffedfa;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    height: fit-content;
+    /* border: 2px solid rgb(0, 0, 0); */
+    border-radius: 30px;
+    display: flex;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-x: hidden;
+    z-index: 1;
+    flex-direction: column;
+    align-items: normal;
+    overflow-y: auto;
+}
+
+.parallax {
+    background-image: url("../img/bodyImg/paralax.png");
+    height: 1000px;
+    width: 100vw;
+    position: absolute;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    justify-content: center;
+    padding-right: 100px;
+}
+
+.penghubungParallax {
+    width: 130vw;
+    height: 40em;
+    margin-left: -10em;
+    display: flex;
+    justify-content: center;
+    background-color: #ffedfa;
+    position: absolute;
+    filter: blur(4vh);
+    -webkit-filter: blur(4vh);
+    margin-top: 900px;
+    z-index: -1;
+}
+
+.landing {
+
+    .landingText {
+        font-size: 18px;
+        color: #161717;
+        letter-spacing: 2px;
+        font-family: 'Gotham Medium', sans-serif;
+        width: 600px;
+        text-align: center;
+        position: relative;
+        height: fit-content;
+    }
+
+    .logoFull {
+        display: inline-flex;
+        justify-content: center;
+        padding: 70px 0px 50px 0;
+    }
+
+    .logoLanding {
+        height: 200px;
+    }
+
+    .textlanding {
+        margin-top: 0 auto;
+        height: auto;
+    }
+
+    .getStarted {
+        background: #FF810C;
+        color: #FFEDFA;
+        font-family: 'Eight Bit Dragon', sans-serif;
+        padding: 0.35em;
+        padding-left: 1.2em;
+        font-size: 17px;
+        font-weight: 500;
+        border-radius: 0.9em;
+        border: none;
+        letter-spacing: 0.15em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 2em #db700c;
+        overflow: hidden;
+        position: relative;
+        height: 4em;
+        padding-right: 4.4em;
+        cursor: pointer;
+        margin-top: 3em;
+    }
+
+    .getStarted .icon {
+        background: #FFEDFA;
+        margin-left: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3.3em;
+        width: 3.3em;
+        border-radius: 0.7em;
+        box-shadow: 0.1em 0.1em 0.6em 0.2em #FF810C;
+        right: 0.3em;
+        transition: all 0.3s;
+        -webkit-border-radius: 0.7em;
+        -moz-border-radius: 0.7em;
+        -ms-border-radius: 0.7em;
+        -o-border-radius: 0.7em;
+    }
+
+    .getStarted:hover .icon {
+        width: calc(100% - 0.6em);
+    }
+
+    .getStarted .icon svg {
+        width: 1.1em;
+        transition: transform 0.3s;
+        color: #FF810C;
+    }
+
+    .getStarted:hover .icon svg {
+        transform: translateX(0.1em);
+    }
+
+    .getStarted:active .icon {
+        transform: scale(0.95);
+    }
+}
+
+.carousel {
+    #carouselExampleIndicators {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1000px;
+        max-height: 500px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        margin-top: -20px;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+        max-height: 500px;
+        height: 500px;
+        width: 1000px;
+        object-fit: fill;
+    }
+
+    .carousel-inner {
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    .carousel button {
+        margin: -9rem;
+        color: #161717;
+    }
+
+    .arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+/* card top games */
+.wrapper {
+    margin: 11em 3vh
+}
+
+.card {
+    border: none;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    border-radius: 15px;
+    transform-origin: center center;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    min-height: 250px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+
+
+    @media(max-width: 720px) {
+        min-height: 350px;
+    }
+
+    @media (max-width: 420px) {
+        min-height: 300px;
+    }
+
+
+    &.card-has-bg {
+        transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: inherit;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            /* mengubah skala menjadi lebih besar saat hover */
+            box-shadow: 0 0 5px -2px rgba(0, 0, 0, 0.3);
+            background-size: 130%;
+            transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+
+            .card-img-overlay {
+                transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+                background: #083358;
+                background: linear-gradient(0deg, rgb(8, 51, 88), rgba(8, 51, 88, 0.383));
+
+            }
+        }
+    }
+
+    /* Teks di bagian bawah card */
+    .card-body {
+        display: flexbox;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        /* Menyesuaikan tinggi card */
+    }
+
+}
+
+.col-xl-2 {
+    width: 230px;
+}
+
+.card-title {
+    /*Yourexistingstyles*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*Centervertically*/
+    color: #ffedfa;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 0.3s;
+    opacity: 0;
+
+}
+
+.card-title a {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.card:hover .card-title {
+    opacity: 1;
+}
+
+/* / */
+
+.whatIs {
+    text-align: center;
+    font-size: 43px;
+}
+
+.card-header {
+    color: #13093F;
+    font-size: 26px;
+    font-family: 'Circular Medium', sans-serif;
+    font-weight: 700;
+    line-height: 37px;
+    padding: 0;
+    background: none;
+}
+
+.card-desc {
+    width: 233px;
+    color: rgba(34.67, 28.94, 57.59, 0.68);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Inter", sans-serif;
+}
+
+
+.benefic {
+    height: 330px;
+    border-radius: 19px;
+    background: #FFEDFA;
+    box-shadow: 0px 0px 53.6px -2px rgba(0, 0, 0, 0.25);
+}
+
+.ctext {
+    text-align: left;
+    margin: 25px;
+}
+
+.bgbene {
+    height: 710px;
+    /* Anda dapat menyesuaikan nilai ini sesuai kebutuhan */
+    width: 100vw;
+    /* Lebar 100vw */
+    z-index: -1;
+    background-image: url("../img/bodyImg/wave1.svg");
+    /* Ganti "gambar-anda.svg" dengan path SVG Anda */
+    background-size: cover;
+    /* Menyesuaikan gambar latar belakang untuk menutupi seluruh area */
+    background-position: top center;
+}
+
+.titleBene {
+    color: #07BABA;
+    font-family: 'Circular Bold', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 47px;
+    /* 117.5% */
+    letter-spacing: 6.8px;
+}
+
+.titleBene1 {
+    color: #13093F;
+    text-align: center;
+    font-family: 'Circular Bold', sans-serif;
+    font-size: 49px;
+    font-style: normal;
+    line-height: 120%;
+    /* 58.8px */
+}
+
+.quote {
+    text-align: left;
+    color: #FFEDFA;
+}
+
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #0086D6, #05E896);
+    color: #FFEDFA;
+    overflow: hidden;
+    width: 200px;
+    height: 80px;
+}
+
+.cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io:hover span {
+    color: #FFEDFA;
+    /* Ubah warna teks saat tombol dihover */
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.cssbuttons-io::before {
+    content: "";
+    background: #000000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+    transform: scale(0.95);
+}
+
+
+footer {
+    background: #083358;
+}

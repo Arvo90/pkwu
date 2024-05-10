@@ -1,0 +1,226 @@
+h1 {
+    color: black;
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.logo {
+
+    opacity: 100%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+
+a {
+    display: flex;
+    align-items: center;
+    color: #f6f6f6;
+    padding: 10px;
+    width: 48px;
+    opacity: 70%;
+    transition: width 0.2s linear;
+    -webkit-transition: width 0.2s linear;
+    -moz-transition: width 0.2s linear;
+    -ms-transition: width 0.2s linear;
+    -o-transition: width 0.2s linear;
+    text-decoration: none; /* Add this line to remove underline */
+}
+.logo span {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+.logo-icon span {
+    text-align: left;
+    font-family: 'Eight Bit Dragon', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 6.45px;
+}
+
+.logo-icon {
+
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 11px;
+
+}
+
+.nav-item {
+    text-align: left;
+    font-size: 15px;
+    padding-left: 35px;
+
+}
+
+.home-nav {
+    margin-top: 15px;
+}
+
+a:hover {
+    opacity: 100%;
+
+}
+
+a.nav-item:hover {
+    color: #083358;
+}
+
+nav:hover {
+    width: 250px;
+    transition: width 0.5s ease;
+
+}
+
+.isi-nav {
+    margin-left: 3.5px;
+    margin-top: 5px;
+    font-family: "Montserrat";
+}
+
+.nav-line {
+    opacity: 50%;
+    display: flex;
+    width: 53px;
+    height: 1px;
+    background: #F6F6F6;
+    border-radius: 3px;
+    transition: width 0.2s linear, opacity 0.5s ease;
+    /*Addtransitioneffectforwidthandopacity*/
+    -webkit-transition: width 0.2s linear, opacity 0.5s ease;
+    -moz-transition: width 0.2s linear, opacity 0.5s ease;
+    -ms-transition: width 0.2s linear, opacity 0.5s ease;
+    -o-transition: width 0.2s linear, opacity 0.5s ease;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+nav:hover a {
+    width: 220px;
+    transition: width 0.32s linear, opacity 0.3s ease;
+    -webkit-transition: width 0.32s linear, opacity 0.3s ease;
+    -moz-transition: width 0.32s linear, opacity 0.3s ease;
+    -ms-transition: width 0.32s linear, opacity 0.3s ease;
+    -o-transition: width 0.32s linear, opacity 0.3s ease;
+}
+
+a:hover .nav-item {
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+
+nav:hover .nav-line {
+    transition: width 0.2s linear;
+    width: 100%;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+
+/* Add this CSS */
+nav {
+    overflow-x: hidden;
+    padding: 8px;
+    max-height: 100%;
+    position: fixed;
+    color: #F6F6F6;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(rgba(9, 45, 112, 0.966), rgba(9, 30, 87, 0.952));
+    width: 70px;
+    overflow-y: auto;
+    /* Add overflow property to make it scrollable */
+    transition: width 0.2s linear;
+    box-shadow: 0 0 35px #00000085;
+    z-index: 2;
+}
+
+/* Adjusted styles for the card when navbar is open */
+nav:hover {
+    width: 250px;
+    transition: width 0.5s ease;
+}
+
+/* Hide scrollbar in general */
+nav::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+/* Custom styles for scrollbar */
+nav.scroll-hide-scrollbar::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+nav.scroll-hide-scrollbar::-webkit-scrollbar-track {
+    background: #083358;
+}
+
+nav.scroll-hide-scrollbar::-webkit-scrollbar-thumb {
+    background: linear-gradient(60deg, #1EDA8B 6.44%, #2EA6DA 89.35%);
+    border-radius: 10px;
+    border: 0.25em solid #083358;
+}
+
+/* Additional style to hide scrollbar by default */
+nav::-webkit-scrollbar {
+    width: 0;
+}
+
+nav a.active {
+    opacity: 100%;
+    padding-right: 20px;
+    background: linear-gradient(60deg, #1EDA8B 6.44%, #2EA6DA 89.35%);
+    border-radius: 16px;
+    color: #f6f6f6;
+    animation: animate 2s linear infinite;
+    -webkit-animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        /* filter: hue-rotate(360deg);
+            -webkit-filter: hue-rotate(360deg); */
+    }
+}
+
+nav a img.nav-icon {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav .active {
+    opacity: 100%;
+}
+
+nav ul .logoSolid-icon span {
+    font-family: Montserrat;
+    display: flex;
+    justify-content: center;
+    color: #F6F6F6;
+    text-align: center;
+
+}

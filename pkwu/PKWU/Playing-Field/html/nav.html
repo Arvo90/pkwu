@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playing Field</title>
+    <link rel="stylesheet" href="../CSS/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha384-lc5r+4Lq3V0gVhPQrVbY5te1N+27XWnJ6N3/xCBVl5vKU4N0CTxEgOiUn6rI5R6U" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+    <nav>
+        <ul>
+            <li>
+                <div class="logo-icon">
+                    <img src="../img/navIcon/logo.svg" class="logo" alt="">
+                    <span class="nav-item">Playing Field</span>
+                </div>
+            </li>
+            <div class="nav-line"></div>
+            </a>
+            <div class="isi-nav">
+                <li>
+                    <a href="#" class="active" onclick="changePage(this)">
+                        <img src="../img/navIcon/home.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="homet">Home</div>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/game.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="gamet">Game</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/contact.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="contactt">Contact</div>
+                        </span>
+                    </a></li>
+            </div>
+            <div class="nav-line" style="margin-top: 5px;"></div>
+            <div class="isi-nav">
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/action.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="actiont">Action</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/shooter.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="aboutt">Shooter</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/racing.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="contactt">Racing</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/sport.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="actiont">Sport</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/horror.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="aboutt">Horror</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/puzzle.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="contactt">Puzzle</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/rpg.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="actiont">RPG</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/strategi.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="aboutt">Strategy</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/multiplayer.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="contactt">Multiplayer</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/arcade.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="actiont">Arcade</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/card.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="aboutt">Card</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/stickman.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="contactt">Stickman</div>
+                        </span>
+                    </a></li>
+                <li><a href="#" onclick="changePage(this)">
+                        <img src="../img/navIcon/casual.svg" class="nav-icon">
+                        <span class="nav-item">
+                            <div class="actiont">Casual</div>
+                        </span>
+                    </a></li>
+            </div>
+            <div class="nav-line" style="margin-top: 5px; margin-bottom: 7px;"></div>
+            <div class="logoSolid-icon" style="bottom: 0 auto; display:flex; ">
+                <span class="logo-span">playingfield.com</span>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+    </div>
+
+    <script>
+        function changePage(element) {
+            // Remove 'active' class from all links
+            document.querySelectorAll('.isi-nav a').forEach(link => link.classList.remove('active'));
+
+            // Add 'active' class to the clicked link
+            element.classList.add('active');
+        }
+
+        const navElement = document.querySelector('nav');
+
+        navElement.addEventListener('mouseover', function () {
+            this.classList.add('scroll-hide-scrollbar');
+        });
+
+        navElement.addEventListener('mouseout', function () {
+            this.classList.remove('scroll-hide-scrollbar');
+        });
+    </script>
+
+</body>
+
+</html>
