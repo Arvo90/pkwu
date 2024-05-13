@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/nav.css">
-    <link rel="stylesheet" href="../CSS/ingame2.css">
+    <link rel="stylesheet" href="../CSS/ingame_true.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha384-lc5r+4Lq3V0gVhPQrVbY5te1N+27XWnJ6N3/xCBVl5vKU4N0CTxEgOiUn6rI5R6U" crossorigin="anonymous">
@@ -137,9 +137,9 @@
         </ul>
     </nav>
 
-    <div class="container">
+    <div class="container"> 
         <div class="col-12">
-            <iframe src="https://www.crazygames.co.id/embed/exhibit-of-sorrows"
+            <iframe src="https://www.crazygames.com/embed/exhibit-of-sorrows"
                 style="width: 100%; height:723px;border-radius: 20px; background-color: #083358" frameborder="0" allow="gamepad *;"></iframe>
         </div>
         <div class="row">
@@ -215,9 +215,9 @@
                 </div>
             </div>
         </div>
-        <!---Alvaro-->
+        <!---Alvaro other game(card) -->
         <div class="Other_Games col-3" style="overflow: hidden;">Other Games</div>
-        <span class="out_container">
+        
         <?php 
         include "connection.php";
 
@@ -227,31 +227,31 @@
             while ($row= mysqli_fetch_assoc($result)){
            echo  "<div class='other_game_row'>"; 
            ?>
-           <div class="other_game_card" onclick="changePageGame('<?php echo $row['url']; ?>')">
-        <div class="other_game_card-front">
+        <div class="other_game_card" onclick="changePageGame('<?php echo $row['url']; ?>')"> <!-- container-->
+        <div class="other_game_card-front"> <!--front-->
              <img src="../img/cardImg/<?php echo $row['image']; ?>" style=" height: 200px; width: 300px ;border-radius: 50px;">
-            
-        </div>
-        <div class="other_game_card-back">
-            <h2>Smash Kartz</h2>
-        </div>
-    </div> <?php
+        </div><!--front-->
+        <div class="other_game_card-back"><!--back-->
+            <h2><?php echo $row['name']; ?></h2>
+        </div><!--back-->
+    </div> <!-- container--><?php
             }
         }
         ?>
-        </span>
+      
 
 
 
 
     
     
-
+    </div>
    
 
 </div> <!--row-->
 
 
+    </div>
     </div>
     <footer class="w-100 py-4 flex-shrink-0" style="background: #083358;">
         <div class="row">
